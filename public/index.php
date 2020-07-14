@@ -3,7 +3,6 @@
 include '../vendor/autoload.php';
 
 use Model\Model;
-
 ?>
 
  <!doctype html>
@@ -19,7 +18,7 @@ use Model\Model;
    </head>
    <body>
 
-  <h1> <?= !empty($_POST) && !empty((new Model())->checkUser($_POST['Login'], $_POST['Password'])) ? 'Welcome!' : 'Такого пользователя нет' ?></h1>
+  <h1> <?= !empty($_POST) && !empty((new Model())->checkUser($_POST['Login'], $_POST['Password'])) ? 'Welcome '.(new Model())->checkUser($_POST['Login'], $_POST['Password']) : 'Такого пользователя нет' ?></h1>
    <form class="m-3 w-25" method="post" action="?">
   <div class="form-group ">
     <label for="exampleInputEmail1">Email address</label>
@@ -32,6 +31,7 @@ use Model\Model;
   
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
      <!-- Optional JavaScript -->
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

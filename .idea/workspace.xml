@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1d655e41-a4ba-41de-bee7-644026de562b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Model.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CountDB1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,6 +47,7 @@
       <updated>1594670120614</updated>
       <workItem from="1594670122815" duration="2401000" />
       <workItem from="1594672535808" duration="34000" />
+      <workItem from="1594715608387" duration="759000" />
     </task>
     <servers />
   </component>

@@ -29,6 +29,6 @@ SELECT `group`. `cod`
 FROM `group`,`users` 
 WHERE `group`.`id` = `users`.`id_cod` AND `login` = '$login' AND `password` = '$password'
 SQL
-);
+)[0]['cod'];
     }
 }
