@@ -3,9 +3,6 @@
 include '../vendor/autoload.php';
 
 use Model\Model;
-if(!empty($_POST)){
-    $cod = (new Model())->checkUser($_POST['Login'], $_POST['Password']);
-}
 
 ?>
 
@@ -22,7 +19,7 @@ if(!empty($_POST)){
    </head>
    <body>
 
-  <h1> <?= !empty($cod) ? 'Welcome '.($cod) : 'Такого пользователя нет' ?></h1>
+  <h1> <?=!empty($_POST) && !empty($user= (new Model())->checkUser($_POST['Login'], $_POST['Password'])) ? 'Welcome '.$user : 'Такого пользователя нет' ?></h1>
    <form class="m-3 w-25" method="post" action="?">
   <div class="form-group ">
     <label for="exampleInputEmail1">Email address</label>
